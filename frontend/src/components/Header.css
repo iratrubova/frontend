@@ -1,0 +1,157 @@
+@font-face {
+  font-family: ProtestRevolution-Regular;
+  src: url(../fonts/ProtestRevolution-Regular.ttf);
+  font-family: ProtestRiot-Regular;
+  src: url(../fonts/ProtestRiot-Regular.ttf);
+  font-family: PlayfairDisplay-VariableFont_wght;
+  src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  font-family: Barlow-Regular;
+  src: url(../fonts/Barlow-Regular.ttf);
+  
+  
+}
+
+  
+  .logo {
+    cursor: pointer;
+    color: red; /* Logo color */
+    text-decoration: none;
+    font-family:  PlayfairDisplay-VariableFont_wght;
+    font-size: 30px;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-family:  Barlow-Regular;
+    font-size: 20px;
+    margin: 0 50px;
+  }
+  
+  nav a:hover {
+    color: red;
+  }
+  
+  /* src/components/Header/header.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+}
+
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Additional styles for transforming the hamburger into an "X" */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(43deg) translate(4.5px, 4.5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Ensure the hamburger spans adjust for the "X" transformation */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    z-index: 1;
+  }
+
+  .nav.show {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+  
+  @media (max-width: 768px) {
+
+    .nav-wrapper {
+      position: relative;
+      background-color: white;
+      width: 100%;
+      z-index: 1100;
+      
+    }
+
+    .nav_wrapper {
+      position:relative;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 250px;
+      z-index: 1100;
+    }
+  
+    .nav-wrapper.show {
+      display: block;
+    }
+
+    ul {
+      margin: 0;
+      padding: 20px;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav a {
+      margin: 15px;
+      display: block;
+    }
+  }
+
+  
+  
+  

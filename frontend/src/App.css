@@ -1,0 +1,42 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  padding: 5%;
+}
+
+.column {
+  flex: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  main {
+      padding: 2% 10%;
+  }
+
+  .column {
+      /* Example for a two-column layout on wider screens */
+      flex: 50%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .header, .footer {
+      padding: 20px 10%;
+  }
+}
